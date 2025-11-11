@@ -8,9 +8,9 @@ const listingSchema = new Schema({
     },
     description: String,
     image: {
-        type: String,
-        default: "https://unsplash.com/photos/trees-under-cloudy-sky-during-sunset--G3rw6Y02D0",
-        set : (v) => v === "" ? "https://unsplash.com/photos/trees-under-cloudy-sky-during-sunset--G3rw6Y02D0" : v,
+        url: String,
+        // default: "https://unsplash.com/photos/trees-under-cloudy-sky-during-sunset--G3rw6Y02D0",
+        // set : (v) => v === "" ? "https://unsplash.com/photos/trees-under-cloudy-sky-during-sunset--G3rw6Y02D0" : v,
     },
     price: Number,
     location: String,
